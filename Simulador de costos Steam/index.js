@@ -1,5 +1,5 @@
 // VARIABLES 
-
+let engañaPichanga = false;
 let precioJuego;
 let precioFinal;
 let impuestoRetencionGanancias;
@@ -16,30 +16,36 @@ function imprimirResumen(){
 
 function calcularImpuestos(){ 
 
-    event.preventDefault();
+    if (engañaPichanga === true) {
 
-    if (document.getElementById("precioJuego").value !== "") {
-        precioJuego = parseInt(document.getElementById("precioJuego").value);
-    impuestoRetencionGanancias = precioJuego * 0.35;
-    impuestoPais = precioJuego * 0.3;
-    precioFinal = precioJuego + impuestoRetencionGanancias + impuestoPais;
-
-    if (precioJuego < 10) {
-        alert("No es un precio valido");
-        document.getElementById("precioJuego").focus();   
-    } else{
-        imprimirResumen();
-        busquedasRecientes.push(`Precio Original: ${Math.floor (precioJuego)}, precio Final: ${Math.floor (precioFinal)} <br/>`);
-
-    }
+        if (document.getElementById("precioJuego").value !== "") {
+            precioJuego = parseInt(document.getElementById("precioJuego").value);
+        impuestoRetencionGanancias = precioJuego * 0.35;
+        impuestoPais = precioJuego * 0.3;
+        precioFinal = precioJuego + impuestoRetencionGanancias + impuestoPais;
     
-    document.getElementById("busquedasRecientes").innerHTML = busquedasRecientes;
-    document.getElementById("precioJuego").value = "";
+        if (precioJuego < 10) {
+            alert("No es un precio valido");
+            document.getElementById("precioJuego").focus();   
+        } else{
+            imprimirResumen();
+            busquedasRecientes.push(`Precio Original: ${Math.floor (precioJuego)}, precio Final: ${Math.floor (precioFinal)} <br/>`);
+    
+        }
         
+        document.getElementById("busquedasRecientes").innerHTML = busquedasRecientes;
+        document.getElementById("precioJuego").value = "";
+            
+        }
+        else {
+            alert("No ingresaste ningun precio!")
+        }
+        
+    } else{
+        engañaPichanga = true;
     }
-    else {
-        alert("No ingresaste ningun precio!")
-    }
+
+    
     
 
 }
