@@ -5,19 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400&display=swap" rel="stylesheet"> 
     <title>Simulador de costos Steam Argentina</title>
 </head>
 <body>  
-    <form class="formularioPrecio">
-        <p>Coloque el precio del juego de Steam</p>
-        <input type="text"  name="precioJuego" id="precioJuego" placeholder="Ingrese el precio">
-        <button type="button" onclick="calcularImpuestos()"> Calcular impuestos de Argentina </button>
-    </form>
-    
-    <h3>Calculo del precio</h3>
-    <p id="precioTotalConImpuestos"></p>
-    <h3>Historial</h3>
-    <p id="busquedasRecientes"></p>
+
+    <header class="header">
+        <h2>CheSteam</h2>
+        <img class="iconoLogo" src="/Simulador de costos Steam/img/Icono-Mate-100.png" alt="Icono-Mate">
+    </header>
+
+    <main class="main">
+        <section class="contenedorGeneral">
+            <form class="formularioPrecio">
+                <p class="formularioTitulo">Precio del juego</p>
+                <input type="text"  name="precioJuego" id="precioJuego" placeholder="Ingrese el precio">
+                <button type="button" onclick="calcularImpuestos()"> Calcular impuestos de Argentina </button>
+            </form>
+            <div class="calculoImpuestos">
+                <h3>Calculo del precio</h3>
+                <p id="precioTotalConImpuestos"></p>
+            </div>
+    </section>
+
+    <aside class="contenedorHistorial">
+        <div class="historial">
+            <h3>Busquedas recientes</h3>
+            <p id="busquedasRecientes"></p>
+        </div>
+    </aside>
+
+    </main>
+
 
     <script type="text/javascript" src="index.js"></script>
 </body>

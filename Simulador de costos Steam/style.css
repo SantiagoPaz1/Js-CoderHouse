@@ -1,3 +1,5 @@
+/*    PRINCIPALES     */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,9 +7,78 @@
 }
 
 
+.main{
+    font-family: Archivo, Arial;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2A475E, #1B2838);
+    display: flex;
+}
+
+
+
+
+/*     HEADER     */
+
+.header{
+    font-family: Archivo, Arial;
+    display: flex;
+    background: linear-gradient(to right, #171A21, #272c38, #171A21 );
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    
+}
+
+.iconoLogo{
+    width: 40px;
+}
+
+
+
+
+/*    CONTENEDOR GENERAL    */
+
+.contenedorGeneral{   
+    background-color: #013A60;
+    width: 1000px;
+    height: 600px;
+    margin: 50px 80px;
+    border-radius: 10px;
+
+}
+.formularioTitulo{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 10px;
+}
 .formularioPrecio{
     text-align: center;
-    margin: 200px 0px;
+    margin: 50px 0px;
+}
+
+.calculoImpuestos{
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+
+/*    CONTENEDOR ASIDE    */
+
+.contenedorHistorial{
+    background-color: #013A60;
+    color: aliceblue;
+    width: 450px;
+    height: 600px;
+    margin: 50px 80px;
+    border-radius: 10px;
+
+}
+
+.historial{
+    margin: 20px;
 }
 
 #busquedasRecientes {
