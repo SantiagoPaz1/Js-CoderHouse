@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.formularioPrecio{
+    text-align: center;
+    margin: 200px 0px;
+}
+
+#busquedasRecientes {
+    border: 1px solid;
+}

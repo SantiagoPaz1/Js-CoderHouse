@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de costos Steam Argentina</title>
+</head>
+<body>  
+    <form class="formularioPrecio">
+        <p>Coloque el precio del juego de Steam</p>
+        <input type="text"  name="precioJuego" id="precioJuego" placeholder="Ingrese el precio">
+        <button type="button" onclick="calcularImpuestos()"> Calcular impuestos de Argentina </button>
+    </form>
+    
+    <h3>Calculo del precio</h3>
+    <p id="precioTotalConImpuestos"></p>
+    <h3>Historial</h3>
+    <p id="busquedasRecientes"></p>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
