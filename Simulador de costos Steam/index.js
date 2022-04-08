@@ -1,13 +1,3 @@
-/*
-function volverACalcular(){
-    let respuesta = prompt( "Desea volver a calcular un juego? Indique Si o No" );
-    if (respuesta === Si || respuesta === si) {
-
-    }
-}
-
-document.getElementById("precioTotalConImpuestos").innerHTML = "El precio del juego es:   " + <br/> + precioJuego + "Retención de Ganancias - RG AFIP Nº 4815/2020  ( 35% )     $ "  + <br/> + impuestoRetencionGanancias + "Impuesto PAIS - RG AFIP N° 4659/2020  ( 30% )     $ " + <br/> + impuestoPais + "El valor final del juego es de:     $ " + <br/> + precioFinal ;
-*/
 // VARIABLES 
 
 let precioJuego;
@@ -22,6 +12,7 @@ let busquedasRecientes = [];
 function imprimirResumen(){
     document.getElementById("precioTotalConImpuestos").innerHTML = ` El precio del juego es:  $  ${Math.floor (precioJuego)}  <br/>  Retención de Ganancias - RG AFIP Nº 4815/2020  ( 35% )     $    ${Math.floor (impuestoRetencionGanancias)}  <br/>  Impuesto PAIS - RG AFIP N° 4659/2020  ( 30% )     $     ${Math.floor (impuestoPais)}  <br/> El valor final del juego es de:     $   ${Math.floor (precioFinal)}  <br/> `;
 }
+
 
 function calcularImpuestos(){ 
 
@@ -52,7 +43,6 @@ function calcularImpuestos(){
     
 
 }
-
 
 
 // Programa 
