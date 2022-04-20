@@ -1,4 +1,5 @@
 // VARIABLES 
+const btnModoOscuro = document.querySelector("#btnModoOscuro");
 let nombreJuego;
 let engañaPichanga = false;
 let precioJuego;
@@ -11,7 +12,17 @@ let busquedasRecientes = [];
 
 // FUNCIONES
 
+function modoOscuro(){
+    document.body.classList.toggle("modoOscuro");
+    btnModoOscuro.classList.toggle("active");
 
+    if(document.body.classList.contains("modoOscuro")){
+        localStorage.setItem("modo-oscuro", "true")
+    }else{
+        localStorage.setItem("modo-oscuro", "false")
+    }
+       
+}
 
 
 function imprimirResumen(){
@@ -59,7 +70,17 @@ function calcularImpuestos(){
 
 
 // Programa 
+
 document.querySelector("#btnCalculo").onclick = calcularImpuestos;
+btnModoOscuro.addEventListener("click", modoOscuro);
+
+if(localStorage.getItem("modo-oscuro") === "true"){
+    document.body.classList.add("modoOscuro");
+    btnModoOscuro.classList.add("active");
+}else{
+    document.body.classList.remove("modoOscuro");
+    btnModoOscuro.classList.remove("active");
+}
 
 
 

@@ -8,11 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400&family=Lobster&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/04a73ba0a6.js" crossorigin="anonymous"></script>
     <title>Simulador de costos Steam Argentina</title>
 </head>
 <body>  
+    
 
     <header class="header">
+        
+        <button class="btnModoOscuro" id="btnModoOscuro">
+            <span class="spanMO"><i class="fa-solid fa-sun"></i></i></span>
+            <span class="spanMO"><i class="fa-solid fa-moon"></i></span>
+        </button>
+        
         <h2 id="logo">CheSteam</h2>
         <img class="iconoLogo" src="img/Icono-Mate-100.png" alt="Icono-Mate">
     </header>
@@ -21,7 +29,7 @@
         <section class="contenedorGeneral">
             <form class="formularioPrecio">
                 <p id="formularioNombreJuego">Nombre del juego</p>
-                <input type="text" name="nombreJuego" id="nombreJuego" placeholder="Es opcional">
+                <input type="text" name="nombreJuego" id="nombreJuego" placeholder="Dark Souls 3">
                 <p class="formularioTitulo">Precio del juego</p>
                 <input type="text"  name="precioJuego" id="precioJuego" placeholder="Ingrese el precio">
                 <button type="button" id="btnCalculo" > Calcular impuestos de Argentina </button>
