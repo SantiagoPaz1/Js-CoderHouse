@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400&family=Lobster&display=swap" rel="stylesheet">  
     <title>Simulador de costos Steam Argentina</title>
 </head>
 <body>  
 
     <header class="header">
-        <h2>CheSteam</h2>
-        <img class="iconoLogo" src="/Simulador de costos Steam/img/Icono-Mate-100.png" alt="Icono-Mate">
+        <h2 id="logo">CheSteam</h2>
+        <img class="iconoLogo" src="img/Icono-Mate-100.png" alt="Icono-Mate">
     </header>
 
     <main class="main">
         <section class="contenedorGeneral">
             <form class="formularioPrecio">
+                <p id="formularioNombreJuego">Nombre del juego</p>
+                <input type="text" name="nombreJuego" id="nombreJuego" placeholder="Es opcional">
                 <p class="formularioTitulo">Precio del juego</p>
                 <input type="text"  name="precioJuego" id="precioJuego" placeholder="Ingrese el precio">
-                <button type="button" onclick="calcularImpuestos()"> Calcular impuestos de Argentina </button>
+                <button type="button" id="btnCalculo" > Calcular impuestos de Argentina </button>
             </form>
             <div class="calculoImpuestos">
                 <h3>Calculo del precio</h3>
@@ -32,7 +34,7 @@
 
     <aside class="contenedorHistorial">
         <div class="historial">
-            <h3>Busquedas recientes</h3>
+            <h3 class="busquedasRecientesTitulo">Busquedas recientes</h3>
             <p id="busquedasRecientes"></p>
         </div>
     </aside>

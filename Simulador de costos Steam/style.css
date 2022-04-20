@@ -20,7 +20,8 @@
 /*     HEADER     */
 
 .header{
-    font-family: Archivo, Arial;
+    font-family: Lobster, Arial;
+    font-size: 20px;
     display: flex;
     background: linear-gradient(to right, #171A21, #272c38, #171A21 );
     color: aliceblue;
@@ -47,6 +48,10 @@
     border-radius: 10px;
 
 }
+#formularioNombreJuego{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
 .formularioTitulo{
     color: aliceblue;
     font-size: 20px;
@@ -56,10 +61,13 @@
     text-align: center;
     margin: 50px 0px;
 }
-
 .calculoImpuestos{
     color: aliceblue;
     text-align: center;
+}
+.precioFinalTexto{
+    font-size: 25px;
+
 }
 
 
@@ -82,5 +90,11 @@
 }
 
 #busquedasRecientes {
-    border: 1px solid;
+    border: 1.5px solid;
+    margin: 10px 0;
+}
+
+.busquedasRecientesTitulo{
+    font-size: 25px;
+    text-align: center;
 }
